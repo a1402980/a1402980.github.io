@@ -1,0 +1,62 @@
+body{font-family: 'Press Start 2P', cursive;
+  background-color: grey;
+}
+.padding{
+  padding: 0.5%;
+}
+.laatikko {
+border-style: dashed;
+ border-width: 5px
+}
+
+.sininen{
+  background-color: lightblue;
+}
+.vihree{
+  background-color: lightgreen;
+}
+.harmaa{
+  background-color: lightgrey;
+}
+.punainen{
+  background-color: LightCoral;
+}
+.rivi{
+  display: inline-block;
+}
+.keskella{
+  text-align: center;
+}
+
+.tuotekuva{
+  height: 110px;
+}
+
+.hinnasto td{
+  width: 100vh;
+}
+
+.hinnasto tr{
+  border-style: dashed;
+  border-width: 5px;
+}
+
+.hinnasto tr:hover{
+  background-color: slategrey;
+}
+
+.nappi {
+    background-color: #1bc12b;
+    border-style: dashed;
+    border-width: 5px;
+    color:black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.nappi:hover{
+	background-color: #169923;
+}
