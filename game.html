@@ -57,33 +57,64 @@
 
 
 
-    <div style="padding-top: 100px"></div>
-
-<div class="laatikko keskella vihree">
-  <h3>Tervetuloa!</h3>
+    <div style="padding-top: 51px"></div>
+<div class="sininen laatikko keskella">
+    <h2><img src="img/kello.gif" alt="kello" style="height:70px;"> Opintotuki saapuu <span class="c" id="31"></span> päivän kuluttua</h2>
+    <h2>Rahat <span class="rahat vihree">60</span> €</h2>
 </div>
 <br>
-<div class="laatikko keskella">
-  <h3>Tämä on Opintotukisimulaattori!</h3>
-  <h3>Miten pelata?</h3>
-  <h4>Pelin idea on hyvin yksinkertainen: Selviydy. Tarkoituksesti on selvitä joka kuukausi saapuvien opintotukien avulla. <br><br> Sinulla on 5 atribuuttia, joita sinun täytyy seurata: <span class="vihree">Terveys</span>, Nälkä, Jano, Hupi, Älykkyys. Jos Nälkä, Jano, Hupi tai Älykkyys laskevat liian alas, niin alat menettämään <span class="vihree">terveyttäsi</span>. Kun terveytesi on 0, häviät pelin. Osta kaupasta tarvittavia tavaroita jotta selviydyt. </h4>
-  <br><br>
-  <h4 class="punainen">HUOM!
-    <br>
-    SIVU EI TOIMI KUNNOLLA MOBIILILLA
-    <br>
-    Versio Alpha 1.0
-  </h4>
+<div class="harmaa laatikko keskella">
+<h4 class="rivi">Terveys:<span id="terveys">5</span>/5</h4>
+<h4 class="rivi">Nälkä:<span id="nalka">5</span>/5</h4>
+<h4 class="rivi">Jano:<span id="jano">5</span>/5</h4>
+<h4 class="rivi">Hupi:<span id="hupi">5</span>/5</h4>
+<h4 class="rivi">Älykkyys:<span id="alykkyys">5</span>/5</h4>
 </div>
 <br>
-<div class="laatikko sininen keskella padding">
-<a href="game.html" class="nappi" role="button">Aloita Peli!</a>
+<div class="punainen laatikko padding">
+  <h3>Vuokra: <span class="vuokra">300</span>€ maksetaan <span class="vuokrakuukausi" id="21"></span> päivän kuluttua</h3>
+  <h3>Puhelinlasku <span class="puheli">35</span>€ maksetaan <span class="puhelinlasku"></span> kuluttua</h3>
+</div>
+<br>
+<div class="table-responsive">
+<h1>Kauppa</h1>
+    <table class="hinnasto">
+      <tr>
+        <th>Kuva</th>
+        <th>Tuote</th>
+        <th>Kuvaus</th>
+        <th>Hinta</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td><img src="img/olut.png" class="img-responsive tuotekuva" alt="Olut"></td>
+        <td>Olut</td>
+        <td>+1 Jano <br>-1 Älykkyys <br>+1 Hupi</td>
+        <td>23.99€</td>
+        <td><button onclick="ostaOlut()" type="osta" name="button" class="nappi align-right"><span class="glyphicon glyphicon-shopping-cart"></span> Osta</button></td>
+      </tr>
+      <tr>
+        <td><img src="img/nuudeli.png" class="img-responsive tuotekuva" alt="nuudeli"></td>
+        <td>Nuudeli</td>
+        <td>+1 Nälkä<br>-1 Jano</td>
+        <td>1.99€</td>
+        <td><button onclick="ostaNuudeli()" type="osta" name="button" class="nappi align-right"><span class="glyphicon glyphicon-shopping-cart"></span> Osta</button></td>
+      </tr>
+      <tr>
+        <td><img src="img/kirjat.png" class="img-responsive tuotekuva" alt="kirjat"></td>
+        <td>Oppikirja</td>
+        <td>+1 Älykkyys</td>
+        <td>45.50€</td>
+        <td><button onclick="ostaKirja()" type="osta" name="button" class="nappi align-right"><span class="glyphicon glyphicon-shopping-cart"></span> Osta</button></td>
+      </tr>
+
+    </table>
+  </div>
 </div>
 
-
-<audio src="music/lobby.mp3" autoplay loop>
+<audio src="music/musiikki.mp3" autoplay loop>
 <p>If you are reading this, it is because your browser does not support the audio element.     </p>
-<embed src="music/lobby.mp3" width="180" height="90" hidden="true" />
+<embed src="music/musiikki.mp3" width="180" height="90" hidden="true" />
 </audio>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -93,7 +124,10 @@
 
 
   <!-- Your scripts -->
-
+  <script src="js/tukilaskuri.js"></script>
+  <script src="js/osta.js"></script>
+  <script src="js/elama.js"></script>
+  <script src="js/gameover.js"></script>
 
   <!--<script src="js/kuukausimaksulaskuri.js"></script> -->
 </body>

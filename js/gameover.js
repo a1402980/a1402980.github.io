@@ -21,11 +21,19 @@ function gameover() {
           window.location.href = 'gameover.html';
       }
 
-      if (nalka==0 || jano==0 || hupi==0 || alykkyys==0 && terveys>=0) {
+      if (nalka==0 || jano==0 || hupi==0 || alykkyys==0 && terveys>0) {
 
         var terveystekstina=$('#terveys').text();
         var terveys= parseInt(terveystekstina, 10);
         terveys=terveys-1;
+        $('#terveys').text(terveys.toFixed());
+      }
+
+      if (nalka==5 && jano==5 & hupi==5 & alykkyys==5 && terveys<5) {
+
+        var terveystekstina=$('#terveys').text();
+        var terveys= parseInt(terveystekstina, 10);
+        terveys=terveys+1;
         $('#terveys').text(terveys.toFixed());
       }
 
