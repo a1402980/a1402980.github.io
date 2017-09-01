@@ -43,6 +43,16 @@ function gameover() {
         terveys=terveys+1;
         $('#terveys').text(terveys.toFixed());
       }
+        
+      //color stats when low
+      $('.stat').each(function(){
+            if ((int)$(this).value < 2) {
+                $(this).addClass('vilkkuva');
+            }
+            else{
+                $(this).removeClass('vilkkuva');
+            }
+      });
 
 
     }, 500); //tarkastaa joka 0.5 sekunti
