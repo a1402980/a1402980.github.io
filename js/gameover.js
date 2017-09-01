@@ -16,8 +16,15 @@ function gameover() {
 
       var terveystekstina=$('#terveys').text();
       var terveys= parseInt(terveystekstina, 10);
+        
+      var rahatekstina =$('.rahat').text();
+      var rahat= parseInt(rahatekstina, 10);
 
       if (terveys==0) {
+          window.location.href = 'gameover.html';
+      }
+        
+      if (rahat == 0) {
           window.location.href = 'gameover.html';
       }
 
