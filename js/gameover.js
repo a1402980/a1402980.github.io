@@ -24,7 +24,7 @@ function gameover() {
           window.location.href = 'gameover.html';
       }
         
-      if (rahat == 0) {
+      if (rahat > 0) {
           window.location.href = 'gameover.html';
       }
 
@@ -45,6 +45,6 @@ function gameover() {
       }
 
 
-    }, 1000); //tarkastaa joka sekunti
+    }, 500); //tarkastaa joka 0.5 sekunti
   }
   gameover();
