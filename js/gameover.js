@@ -44,6 +44,13 @@ function gameover() {
         $('#terveys').text(terveys.toFixed());
       }
         
+       if (rahat < 50) {
+          $('.rahat').addClass('vilkkuva');
+        }
+        else{
+          $('.rahat').removeClass('vilkkuva');
+        }
+        
         //color stats when low
         $('.stat').each(function(){
               if (parseInt($(this).text()) < 3) {
