@@ -47,10 +47,10 @@ function gameover() {
         //color stats when low
         $('.stat').each(function(){
               if (parseInt($(this).text()) < 3) {
-                  $(this).addClass('vilkkuva');
+                  $(this).parent().addClass('vilkkuva');
               }
               else{
-                  $(this).removeClass('vilkkuva');
+                  $(this).parent().removeClass('vilkkuva');
               }
         });
 
