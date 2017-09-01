@@ -24,7 +24,7 @@ function gameover() {
           window.location.href = 'gameover.html';
       }
         
-      if (rahat > 0) {
+      if (rahat < 0) {
           window.location.href = 'gameover.html';
       }
 
