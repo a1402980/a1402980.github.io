@@ -46,7 +46,7 @@ function gameover() {
         
         //color stats when low
         $('.stat').each(function(){
-              if (parseint($(this).value) < 2) {
+              if (parseInt($(this).value) < 2) {
                   $(this).addClass('vilkkuva');
               }
               else{
